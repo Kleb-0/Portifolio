@@ -22,11 +22,11 @@ export default function Home() {
         <TypeAnimation
           sequence={[
             "Calebe Hillesheim Lamb",
-            2000,
+            1700,
             "Frontend Developer",
-            2000,
+            1700,
             "Calebe Hillesheim Lamb",
-            2000,]}
+            1700,]}
           wrapper="h1"
           speed={50}
           className="!text-5xl w-fit"

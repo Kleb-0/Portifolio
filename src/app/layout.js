@@ -5,7 +5,7 @@ import "@/styles/reset.css"
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen overflow-y-hidden">
+      <body className="min-h-screen overflow-y-scroll lg:overflow-y-hidden">
         <NavBar />
         <main className="flex-grow">{children}</main>
       </body>
