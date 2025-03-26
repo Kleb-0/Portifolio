@@ -1,6 +1,11 @@
 import NavBar from "@/components/navbar";
+import Head from "next/head";
 import "@/styles/globals.css"
 import "@/styles/reset.css"
+
+export const metadata = {
+  title: "Calebe",
+};
 
 export default function RootLayout({ children }) {
   return (
