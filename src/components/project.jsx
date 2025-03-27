@@ -1,19 +1,19 @@
 "use client";
 
 import Image from "next/image";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 
 export default function Project({ image, name, github, deploy }) {
   return (
     <div>
       <motion.div
-        className="shadow-lg shadow-violet-400 w-sm bg-zinc-300 p-8 rounded-2xl"
+        className="shadow-lg hover:shadow-violet-500 w-sm bg-zinc-700 p-8 rounded-2xl"
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
       >
         <motion.h1
-          className="text-3xl flex justify-center mb-4 font-semibold"
+          className="text-3xl flex justify-center mb-4 font-semibold text-zinc-200"
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 2.0, duration: 0.4 }}
@@ -27,7 +27,7 @@ export default function Project({ image, name, github, deploy }) {
           transition={{ delay: 0.5, duration: 0.4 }}
         >
           <Image
-            className="rounded-lg border border-violet-500"
+            className="rounded-lg"
             src={image}
             alt="Project Image"
             width={400}
