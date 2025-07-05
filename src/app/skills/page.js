@@ -10,7 +10,7 @@ export default function Skills() {
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2.8}}
-        className="text-zinc-100 text-4xl text-center my-10"
+        className="text-zinc-100 text-3xl text-center my-10"
       >
         My Technical skills
       </motion.h1>
@@ -36,11 +36,8 @@ export default function Skills() {
       </motion.h1>
       <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
         <Skill skill="Java" skillImg="java.png" />
-        <Skill skill="Spring" skillImg="spring.svg" />
-        <Skill skill="PostgreSQL" skillImg="postgresql.png" />
-        <Skill skill="Angular" skillImg="angular.png" />
-        <Skill skill="Docker" skillImg="docker.png" />
-        <Skill skill="Heroku" skillImg="heroku.svg" />
+        <Skill skill="Go" skillImg="GoLang.png" />
+        <Skill skill="Linux" skillImg="linux.webp" />
       </div>
     </div>
   );
