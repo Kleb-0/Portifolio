@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 
 export default function Skills() {
   return (
-    <div className="bg-zinc-900 min-h-screen p-5">
+    <div className="bg-zinc-100 min-h-screen p-5">
       <motion.h1
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2.8}}
-        className="text-zinc-100 text-3xl text-center my-10"
+        className="text-zinc-900 text-3xl text-center my-10"
       >
         My Technical skills
       </motion.h1>
@@ -26,11 +26,12 @@ export default function Skills() {
         <Skill skill="Git" skillImg="git.png" />
         <Skill skill="Vercel" skillImg="vercel.svg" />
       </div>
+
       <motion.h1
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2.8}}
-        className="text-zinc-100 text-4xl text-center my-10"
+        className="text-zinc-900 text-4xl text-center my-10"
       >
         Studying
       </motion.h1>
