@@ -5,14 +5,14 @@ import { easeIn, easeOut, motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className="min-h-screen bg-zinc-900 text-zinc-100 grid gap-8 p-16 md:grid-cols-[auto_1fr]">
+    <div className="min-h-screen bg-zinc-100 text-zinc-900 grid gap-8 p-16 md:grid-cols-[auto_1fr]">
       <motion.div
         initial={{ opacity: 0, y: -50}}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.0, ease: easeOut }}
       >
         <Image
-          className="rounded-2xl justify-self-center shadow-violet-600 shadow-2xl"
+          className="rounded-2xl justify-self-center"
           src="/professional-photo.png"
           alt="Calebe Hillesheim Lamb photo"
           width={300}
@@ -24,7 +24,7 @@ export default function About() {
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.0, ease: easeOut }}
-          className="text-4xl font-bold bg-gradient-to-r from-violet-600 to-violet-200 bg-clip-text text-transparent pb-1">
+          className="text-4xl font-bold underline decoration-2 pb-1">
           Hi! My name is Calebe
         </motion.h1>
         <motion.p
