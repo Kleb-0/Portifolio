@@ -31,7 +31,7 @@ export default function Skills() {
         initial={{ opacity: 0, y: 35 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 2.8}}
-        className="text-zinc-900 text-4xl text-center my-10"
+        className="text-zinc-900 text-3xl text-center my-10"
       >
         Studying
       </motion.h1>
