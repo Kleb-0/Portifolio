@@ -7,7 +7,7 @@ export default function Project({ image, name, github, deploy }) {
   return (
     <div>
       <motion.div
-        className="md:w-sm w-[200px] bg-zinc-100 p-8 rounded-lg sm:rounded-lg"
+        className="md:w-sm w-[200px] bg-zinc-200 p-8 rounded-lg sm:rounded-lg"
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
