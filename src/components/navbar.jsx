@@ -6,11 +6,11 @@ import { useState } from "react";
 export default function NavBar() {
   const [currentPage, setCurrentPage] = useState([0]);
   const glowEffect =
-    "hover:text-violet-600 hover:scale-110 hover:shadow-violet-500 hover:shadow-sm rounded-sm p-1";
+    "hover:text-violet-600 hover:scale-11 hover:underline rounded-sm p-1";
   const navItems = ["Home", "Projects", "About", "Skills"];
 
   return (
-    <div className="h-20 text-zinc-100 bg-zinc-800 flex items-center">
+    <div className="h-20 text-zinc-900 bg-zinc-100 flex items-center">
       <nav className="md:text-lg text-md w-full flex items-center justify-center ">
         <ul className="flex gap-5 sm:gap-12 ">
           <li>
