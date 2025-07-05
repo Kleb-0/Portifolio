@@ -7,13 +7,13 @@ export default function Project({ image, name, github, deploy }) {
   return (
     <div>
       <motion.div
-        className="shadow-md hover:shadow-violet-500 md:w-sm w-[200px] bg-zinc-700 p-8 rounded-lg sm:rounded-lg"
+        className="md:w-sm w-[200px] bg-zinc-100 p-8 rounded-lg sm:rounded-lg"
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
       >
         <motion.h1
-          className="text-2xl sm:text-3xl flex justify-center mb-4 font-semibold text-zinc-100"
+          className="text-2xl sm:text-3xl flex justify-center mb-4 font-semibold text-zinc-900"
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 2.0, duration: 0.4 }}
@@ -45,7 +45,7 @@ export default function Project({ image, name, github, deploy }) {
             transition={{ delay: 1.0, duration: 0.4 }}
           >
             <Image
-              className="rounded-md hover:scale-110 hover:shadow-violet-500 hover:shadow-md max-w-4/5 sm:max-w-full"
+              className="rounded-md hover:scale-110 max-w-4/5 sm:max-w-full"
               src="/github-logo.png"
               alt="Github icon"
               width={50}
@@ -60,7 +60,7 @@ export default function Project({ image, name, github, deploy }) {
             transition={{ delay: 1.5, duration: 0.4 }}
           >
             <Image
-              className="rounded-md  hover:scale-110 hover:shadow-violet-500 hover:shadow-md  max-w-4/5 sm:max-w-full"
+              className="rounded-md  hover:scale-110 max-w-4/5 sm:max-w-full"
               src="/vercel-logo.png"
               alt="Vercel icon"
               width={50}
