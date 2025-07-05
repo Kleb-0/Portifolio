@@ -7,13 +7,13 @@ export default function Project({ image, name, github, deploy }) {
   return (
     <div>
       <motion.div
-        className="shadow-lg hover:shadow-violet-500 w-sm bg-zinc-700 p-8 rounded-2xl"
+        className="shadow-md hover:shadow-violet-500 md:w-sm w-[200px] bg-zinc-700 p-8 rounded-lg sm:rounded-lg"
         initial={{ opacity: 0, x: 300 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.4 }}
       >
         <motion.h1
-          className="text-3xl flex justify-center mb-4 font-semibold text-zinc-200"
+          className="text-2xl sm:text-3xl flex justify-center mb-4 font-semibold text-zinc-100"
           initial={{ opacity: 0, x: -300 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 2.0, duration: 0.4 }}
@@ -35,7 +35,7 @@ export default function Project({ image, name, github, deploy }) {
             layout="intrinsic"
           />
         </motion.div>
-        <div className="flex justify-center gap-6 mt-5">
+        <div className="flex justify-center gap-3 sm:gap-6 mt-3.5 sm:mt-5">
           <motion.a
             href={github}
             target="_blank"
@@ -45,7 +45,7 @@ export default function Project({ image, name, github, deploy }) {
             transition={{ delay: 1.0, duration: 0.4 }}
           >
             <Image
-              className="rounded-md hover:scale-110 hover:shadow-violet-500 hover:shadow-lg"
+              className="rounded-md hover:scale-110 hover:shadow-violet-500 hover:shadow-md max-w-4/5 sm:max-w-full"
               src="/github-logo.png"
               alt="Github icon"
               width={50}
@@ -55,17 +55,16 @@ export default function Project({ image, name, github, deploy }) {
           <motion.a
             href={deploy}
             target="_blank"
-            rel="noopener noreferrer"
             initial={{ opacity: 0, y: -100 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 1.5, duration: 0.4 }}
           >
             <Image
-              className="rounded-md  hover:scale-110 hover:shadow-violet-500 hover:shadow-lg"
+              className="rounded-md  hover:scale-110 hover:shadow-violet-500 hover:shadow-md  max-w-4/5 sm:max-w-full"
               src="/vercel-logo.png"
               alt="Vercel icon"
               width={50}
-              height={100}
+              height={50}
             />
           </motion.a>
         </div>
