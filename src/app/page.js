@@ -6,14 +6,14 @@ import { easeOut, motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center bg-zinc-900 text-zinc-100 justify-center md:items-start md:pl-20">
+    <div className="flex flex-col min-h-screen items-center bg-zinc-100 text-zinc-900 justify-center md:items-start md:pl-20">
       <motion.p
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: easeOut }}
         className="md:text-5xl sm:text-4xl text-2xl text-center"
       >
-        <strong className="bg-gradient-to-r from-violet-500 to-violet-400 bg-clip-text text-transparent fontFamily-Ringifit">
+        <strong className="font-black">
           Hello,
         </strong>{" "}
         I am
@@ -31,7 +31,7 @@ export default function Home() {
         initial={{ opacity: 0, x: -500}}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.6, ease: easeOut }}
-        className="md:text-4xl sm:text-3xl text-xl text-center bg-gradient-to-r from-violet-500 to-violet-300 bg-clip-text text-transparent"
+        className="md:text-4xl sm:text-3xl text-xl text-center"
       >
         Software developer
       </motion.h3>
