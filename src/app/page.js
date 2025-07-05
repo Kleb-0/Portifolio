@@ -6,12 +6,12 @@ import { easeOut, motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <div className="flex flex-col min-h-screen items-center bg-zinc-100 text-zinc-900 justify-center md:items-start md:pl-20">
+    <div className="flex flex-col min-h-screen items-center bg-zinc-100 text-zinc-900 justify-center md:items-start md:pl-20 px-1">
       <motion.p
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8, ease: easeOut }}
-        className="md:text-5xl sm:text-4xl text-2xl text-center"
+        className="md:text-5xl sm:text-4xl text-2xl text-center font-black"
       >
         <strong className="font-black">
           Hello,
@@ -22,7 +22,7 @@ export default function Home() {
         initial={{ opacity: 0, x: -500 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.2, ease: easeOut }}
-        className="md:text-6xl sm:text-5xl text-4xl text-center"
+        className="md:text-6xl sm:text-5xl text-3xl text-center"
       >
         Calebe Hillesheim Lamb
       </motion.h1>
