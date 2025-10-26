@@ -7,15 +7,20 @@ export default function Skills() {
   return (
     <div className="bg-zinc-100 min-h-screen p-5">
       <motion.h1
-        initial={{ opacity: 0, y: 35 }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2.8}}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="text-zinc-900 text-3xl text-center my-10"
       >
-        My Technical skills
+        My Technical Skills
       </motion.h1>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <motion.div
+        className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.1 }}
+      >
         <Skill skill="HTML" skillImg="html.png" />
         <Skill skill="CSS" skillImg="css.png" />
         <Skill skill="Javascript" skillImg="javascript.png" />
@@ -25,21 +30,27 @@ export default function Skills() {
         <Skill skill="React" skillImg="react.png" />
         <Skill skill="Git" skillImg="git.png" />
         <Skill skill="Vercel" skillImg="vercel.svg" />
-      </div>
+      </motion.div>
 
       <motion.h1
-        initial={{ opacity: 0, y: 35 }}
+        initial={{ opacity: 0, y: 25 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 2.8}}
+        transition={{ duration: 0.6, ease: "easeOut", delay: 0.3 }}
         className="text-zinc-900 text-3xl text-center my-10"
       >
         Studying
       </motion.h1>
-      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+
+      <motion.div
+        className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4"
+        initial={{ opacity: 0, y: 30 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7, ease: "easeOut", delay: 0.4 }}
+      >
         <Skill skill="Java" skillImg="java.png" />
         <Skill skill="Go" skillImg="GoLang.png" />
         <Skill skill="Linux" skillImg="linux.webp" />
-      </div>
+      </motion.div>
     </div>
   );
 }
