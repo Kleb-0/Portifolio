@@ -1,9 +1,0 @@
-@import "tailwindcss";
-@tailwind utilities;
-
-* {
-  font-family: 'Ringift';
-  src: url('/fonts/ringift.ttf');
-  font-weight: 600;
-  font-display: swap;
-}
